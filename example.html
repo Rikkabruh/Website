@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examples of Multimedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('sya.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+            text-align: center; /* Center the text */
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* Center nav items */
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Ensure content starts below the header */
+        .content {
+            margin-top: 80px; /* Add space to account for fixed header */
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Optional background for content */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: black; /* Change to black for better contrast */
+        }
+
+        /* Examples Section */
+        .example-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .example-item {
+            width: 30%;
+            box-sizing: border-box;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .example-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .example-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: black; /* Change to black for better contrast */
+        }
+
+        .example-item p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .example-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .example-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="http://localhost:8080/website.html">Home</a>
+            <a href="http://localhost:8080/definition.html">Definition</a>
+            <a href="#">Examples</a>
+            <a href="http://localhost:8080/importance.html">Importance</a>
+        </nav>
+    </header>
+
+    <!-- Examples Section -->
+    <div class="content">
+        <h2>Examples of Multimedia</h2>
+        <div class="example-gallery">
+            <!-- Example 1: Text and Graphics -->
+            <div class="example-item">
+                <img src="fact.jpg" alt="Text and Graphics" />
+                <h3>Text and Graphics</h3>
+                <p>Text and images are fundamental forms of multimedia used in websites, presentations, and educational material.</p>
+            </div>
+
+            <!-- Example 2: Audio -->
+            <div class="example-item">
+                <img src="mus.jpg" alt="Audio" />
+                <h3>Audio</h3>
+                <p>Audio elements include music, podcasts, and sound effects to enhance user experience and convey information.</p>
+            </div>
+
+            <!-- Example 3: Video -->
+            <div class="example-item">
+                <img src="vid.jpg" alt="Video" />
+                <h3>Video</h3>
+                <p>Videos are dynamic multimedia elements that combine visual and audio content for storytelling, teaching, or entertainment.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
