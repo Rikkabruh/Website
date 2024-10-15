@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruity Delights - A Girly Fruit Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e5f5; /* Light purple background */
+            color: #333;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="%23D1C4E9"%3E%3Ccircle cx="20" cy="20" r="5"/%3E%3Ccircle cx="80" cy="80" r="5"/%3E%3Ccircle cx="50" cy="50" r="5"/%3E%3C/svg%3E');
+            background-size: 20px 20px;
+        }
+
+        header {
+            background-color: #d1c4e9; /* Girly light purple */
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #b39ddb; /* Darker purple */
+        }
+
+        header h1 {
+            margin: 0;
+            color: #6a1b9a; /* Darker purple */
+            font-size: 4.5em;
+            font-family: 'Cookie', cursive;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #4a148c; /* Slightly darker purple */
+            font-style: italic;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #e1bee7; /* Soft pink */
+            border-bottom: 2px solid #d1c4e9;
+        }
+
+        nav a {
+            color: #6a1b9a;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1em;
+            border-radius: 20px;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+
+        nav a:hover {
+            background-color: #d1c4e9;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url('https://example.com/fruit-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            text-align: center;
+            margin: 50px 0;
+            background-color: #e1bee7; /* Light pink for sections */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section h3 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6a1b9a; /* Dark purple for section headers */
+            border-bottom: 2px solid #b39ddb; /* Decorative border */
+            padding-bottom: 10px;
+        }
+
+        .menu-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            width: 30%;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h4 {
+            color: #6a1b9a;
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-family: 'Cookie', cursive;
+        }
+
+        .menu-item p {
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d1c4e9;
+            color: white;
+            border-top: 2px solid #b39ddb;
+        }
+
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .menu-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Fruity Delights🍇</h1>
+        <p>Falco Fruit Shop</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#menu">Our Fruits</a>
+        <a href="#about">About Us</a>
+        <a href="#locations">Locations</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#blog">Blog</a> <!-- New Blog Link -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Fresh & Sweet Fruits Just for You!</h2>
+    </section>
+
+    <!-- Fruits Section -->
+    <section id="menu" class="section">
+        <h3>Our Delicious Fruits</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="gra.jpg" alt="Grapes">
+                <h4>Grapes</h4>
+                <p>Freshly picked and sweetened to perfection!</p>
+            </div>
+            <div class="menu-item">
+                <img src="blue.jpg" alt="Blueberries">
+                <h4>Blueberries</h4>
+                <p>Small but bursting with flavor!</p>
+            </div>
+            <div class="menu-item">
+                <img src="star.jpg" alt="Star Apple">
+                <h4>Star Apple</h4>
+                <p>A unique fruit that’s as pretty as it is tasty.</p>
+            </div>
+            <div class="menu-item">
+                <img src="drag.jpg" alt="Dragon Fruit">
+                <h4>Dragon Fruit</h4>
+                <p>Exotic and vibrant, a true tropical delight!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <h3>About Us</h3>
+        <p>At Fruity Delights, we are passionate about providing the freshest and most delicious fruits. Our shop is designed for fruit lovers who appreciate quality and taste. Join us in celebrating the vibrant flavors of nature!</p>
+    </section>
+
+    <!-- Locations Section -->
+    <!-- Our Locations Section -->
+<section id="locations" class="section" style="background-color: #e1bee7; padding: 40px; border-radius: 15px; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 2.5em; margin-bottom: 20px; color: #6a1b9a; text-align: center; font-family: 'Playfair Display', serif;">Our Locations</h3>
+    <p style="font-size: 1.2em; color: #333; text-align: center; margin-bottom: 20px;">
+        Find us in various locations around town! We are excited to bring our delicious fruits closer to you. Below are our current locations:
+    </p>
+        <ul style="font-size: 1.2em; color: #333; list-style-type: none; padding: 0; text-align: center;">
+        <li>🍍 Fruity Delights Downtown - 123 Fruity St, Cityville</li>
+        <li>🍏 Fruity Delights Eastside - 456 Orchard Ave, Cityville</li>
+        <li>🍊 Fruity Delights West End - 789 Citrus Blvd, Cityville</li>
+        <li>🍓 Fruity Delights Central Market - 101 Berry Lane, Cityville</li>
+    </ul>
+    <p style="font-size: 1.2em; color: #333; text-align: center; margin-top: 20px;">
+        Visit our website for a complete list of our locations and their operating hours!
+    </p>
+</section>
+
+    <!-- Order Now Section -->
+    <section id="order" class="section">
+        <h3>Order Now</h3>
+        <p>Want to enjoy our fruits at home? Place your order online, and we will deliver the freshest fruits to your doorstep!</p>
+    </section>
+
+<!-- Blog Section -->
+<section id="blog" class="section" style="background-color: #e1bee7; padding: 40px; border-radius: 15px; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 2.5em; margin-bottom: 20px; color: #6a1b9a; text-align: center; font-family: 'Playfair Display', serif;">Why Visit Our Website</h3>
+    <p style="font-size: 1.2em; color: #333; text-align: center; margin-bottom: 40px;">
+        Welcome to Fruity Delights, your one-stop shop for all things fruity! If you're looking for fresh, delicious fruits and a delightful shopping experience, look no further. Here are several compelling reasons why you should visit our website today.
+    </p>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">1. Unmatched Freshness and Quality</h4>
+        <p>At Fruity Delights, we prioritize quality above all else. Our fruits are sourced from trusted local farmers, ensuring that you receive only the freshest produce. We believe that the best fruits should be enjoyed at their peak ripeness. By visiting our website, you can easily access a wide selection of seasonal and exotic fruits that are handpicked just for you.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">2. Convenient Online Shopping Experience</h4>
+        <p>Gone are the days of running to the grocery store only to find that your favorite fruits are out of stock. Our website provides a seamless online shopping experience where you can browse, select, and order your favorite fruits from the comfort of your home. With just a few clicks, you can have fresh fruits delivered right to your doorstep.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">3. Exclusive Offers and Discounts</h4>
+        <p>By signing up for our newsletter, you’ll be the first to know about exclusive promotions, discounts, and special offers that are available only to our website visitors. We value our customers and strive to provide the best deals possible, making it easier for you to enjoy your favorite fruits without breaking the bank.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">4. Discover New and Exotic Fruits</h4>
+        <p>At Fruity Delights, we pride ourselves on offering a unique variety of fruits, including many that you may not find in your local grocery store. Our website features detailed descriptions and images of each fruit, allowing you to learn about their origins, health benefits, and best uses. Expand your palate by trying something new!</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">5. Nutritional Information and Recipes</h4>
+        <p>Visiting our website doesn’t just mean buying fruits; it’s also an opportunity to educate yourself about the nutritional benefits of each fruit. We provide comprehensive information on the health benefits of various fruits, along with delicious recipes that incorporate them. Whether you're looking to boost your immune system, enhance your energy, or simply enjoy tasty snacks, our site has the resources you need.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">6. Easy Ordering and Delivery Options</h4>
+        <p>We understand that your time is valuable. Our user-friendly website makes it easy to place orders, with options for same-day delivery in some areas. You can choose your preferred delivery time and enjoy the convenience of having fresh fruits brought directly to you.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">7. Community and Customer Support</h4>
+        <p>At Fruity Delights, we believe in building a community of fruit lovers. Our website offers a platform for customers to connect with us and each other. If you have questions or need assistance, our customer support team is just a click away, ready to help you with any inquiries.</p>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h4 style="color: #6a1b9a; margin-top: 20px; font-family: 'Playfair Display', serif; font-size: 2em;">8. Commitment to Sustainability</h4>
+        <p>We are dedicated to sustainability and eco-friendly practices. By choosing to shop with us, you support local farmers and sustainable agriculture. Our website highlights our initiatives to reduce waste and promote environmental responsibility.</p>
+    </div>
+
+    <h3 style="text-align: center; margin-top: 40px; color: #6a1b9a; font-family: 'Playfair Display', serif;">Join Us Today!</h3>
+    <p style="text-align: center;">
+        So, why wait? Experience the joy of fresh fruits and the benefits of shopping with Fruity Delights by visiting our website today. Whether you’re a fruit connoisseur or just starting your journey into healthy eating, we have something for everyone. Enjoy the convenience, quality, and community that Fruity Delights offers.
+    </p>
+    <p style="text-align: center; font-weight: bold;">
+        <a href="#order" style="color: white; background-color: #6a1b9a; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Visit us today and taste the difference!</a>
+    </p>
+</section>
+
+<!-- Add this to your head section to include the new font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+ 
+ 
+ <!-- Contact Us Section -->
+<section id="contact" class="section" style="background-color: #e1bee7; padding: 40px; border-radius: 15px; margin: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 2.5em; margin-bottom: 20px; color: #6a1b9a; text-align: center; font-family: 'Playfair Display', serif;">Contact Us</h3>
+    <p style="font-size: 1.2em; color: #333; text-align: center; margin-bottom: 20px;">
+        We would love to hear from you! If you have any questions, comments, or feedback, please feel free to reach out to us using the form below or through our contact information provided.
+    </p>
+    <form action="#" method="post" style="max-width: 600px; margin: 0 auto; text-align: left;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;"><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px;"></textarea><br>
+        
+        <input type="submit" value="Send Message" style="background-color: #6a1b9a; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">
+    </form>
+    <p style="text-align: center; margin-top: 20px;">Or reach us at:</p>
+    <p style="text-align: center; font-weight: bold;">
+        Email: info@fruitydelights.com <br>
+        Phone: (123) 456-7890
+    </p>
+</section>
